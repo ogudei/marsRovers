@@ -2,10 +2,10 @@
 some rovers decided to travel around mars...
 
 
-installation
+INSTALLATION
 
 npm install
 
-for Run
+RUN
 
 node app
