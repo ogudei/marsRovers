@@ -11,6 +11,34 @@ const prepareResponseResult = require("./utils/prepareResponseResult")
   .prepareResponseResult;
 const HttpStatus = require("./constants/httpStatuses").HttpStatus;
 
+
+//EXAMPLE INPUT
+
+// {
+//   "upperRightPosition":{
+//     "X":"25",
+//     "Y":"25"
+//   },
+// "vehicles":[
+//   {
+//   "vehicleCoordinates":{
+//     "X":"26",
+//     "Y":"4",
+//     "direction":"E"
+//   },
+
+//   "moves":"RMQLMMEMM"
+// },
+// {
+//   "vehicleCoordinates":{
+//     "X":"4",
+//     "Y":"3",
+//     "direction":"E"
+//   },
+//   "moves":"RMQLMMEMM"
+// }
+// ]    
+// }
 app.post("/perform", (req, res) => {
   let vehicleArray = [];
   let errorArray = [];
